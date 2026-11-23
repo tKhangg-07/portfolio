@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Nguyễn Vũ Tấn Khang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+              <img src="avtar.jpg" alt="Avatar Nguyễn Vũ Tấn Khang" class="logo-avatar"
+              <span>NVA.dev</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="projects.html">Dự án</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+                <button type="button" id="theme-toggle" class="theme-btn" aria-label="Đổi giao diện sáng/tối">🌙 Dark</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header reveal">
+        <h1>Liên hệ với mình</h1>
+        <p>Gửi tin nhắn trực tiếp qua Formspree</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <!-- Thay YOUR_FORM_ID bằng ID form trên https://formspree.io -->
+            <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ban@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nội dung</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Viết lời nhắn cho mình..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Gửi tin nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Nguyễn Vũ Tấn Khang. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
